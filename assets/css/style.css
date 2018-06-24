@@ -1,0 +1,70 @@
+body {
+    background-image: url("https://thumbs.gfycat.com/GroundedTinyBluejay-size_restricted.gif");
+    width: 100%
+}
+
+h1 {
+    font-size: 43px;
+    border: solid 5px red;
+    background: white;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding: 15px;
+    font-family: 'Faster One', cursive;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+img {
+    margin: 10px;
+}
+
+
+.sidebar {
+    padding: 5px;
+    position: relative;
+    border-top: solid red 2px;
+    border-bottom: solid red 2px;
+    margin-bottom: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+span {
+    border: solid red 2px;
+    padding-left: 3px;
+    padding-right:3px;
+    background-color: yellow; 
+    font-size: 15px;
+}
+
+.background {
+    background-image: url("http://agora.xtec.cat/escjoanmaragall/wp-content/uploads/usu115/2017/09/maxresdefault-1.jpg");
+    border: solid 5px red;
+}
+
+.container {
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    text-align: center;
+    border: solid 3px red;
+}
+
+#currentword {
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#scoreboard {
+    padding: 20px;
+}

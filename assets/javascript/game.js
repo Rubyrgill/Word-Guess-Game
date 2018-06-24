@@ -39,7 +39,7 @@ function Game() {
     }
 
     //showing the "_" within HTML
-    document.getElementById("currentword").innerHTML = "GUESS THIS WORD:     " + blanksAndCorrect.join("  ");
+    document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join("  ");
 
     //console logging 
     console.log(randomWord);
@@ -74,7 +74,7 @@ function aud() {
         simpsons.pause();
         r.pause();
         a.play();
-        document.getElementById("image").src = "https://yt3.ggpht.com/a-/ACSszfGqnF8nezfhGPz8bfUScK5EPj-AifAMVwzU5g=s900-mo-c-c0xffffffff-rj-k-no";
+        document.getElementById("image").src = "https://thumbs.gfycat.com/JitteryDependableFlatcoatretriever-size_restricted.gif";
     }
     //Rugrats Audio & Image
     //---------------------------
@@ -86,7 +86,7 @@ function aud() {
         simpsons.pause();
         a.pause();
         r.play();
-        document.getElementById("image").src = "https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Series/103873/103873._SX360_QL80_TTD_.jpg";
+        document.getElementById("image").src = "https://media.giphy.com/media/AX6OSdoOBWlc4/source.gif";
     }
     //Simpsons Audio & Image
     //---------------------------
@@ -98,7 +98,7 @@ function aud() {
         r.pause();
         a.pause();
         simpsons.play();
-        document.getElementById("image").src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Simpsons_FamilyPicture.png/220px-Simpsons_FamilyPicture.png";
+        document.getElementById("image").src = "https://media1.giphy.com/media/fBEDuhnVCiP16/giphy.gif";
     }
     //Scooby-doo Audio & Image
     //---------------------------
@@ -110,7 +110,7 @@ function aud() {
         r.pause();
         a.pause();
         scoobydoo.play();
-        document.getElementById("image").src = "https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/5a/69/b8/5a69b811-ffaf-b1f6-bcc0-ea72a9091ac8/AppIcon-1x_U007emarketing-85-220-5.png/246x0w.jpg";
+        document.getElementById("image").src = "https://78.media.tumblr.com/937ad71d44ed5f303730ef952b629d1e/tumblr_otcsgxzXxe1uz05zuo4_500.gif";
     }
     //Spongebob Audio & Image
     //---------------------------
@@ -122,7 +122,7 @@ function aud() {
         a.pause();
         scoobydoo.pause();
         spongebob.play();
-        document.getElementById("image").src = "https://pbs.twimg.com/profile_images/1002272769352978433/9S4QWSR0.jpg";
+        document.getElementById("image").src = "https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif";
     }
     //Danny Audio & Image
     //---------------------------
@@ -134,7 +134,7 @@ function aud() {
         a.pause();
         scoobydoo.pause();
         danny.play();
-        document.getElementById("image").src = "https://i.ytimg.com/vi/gfxsLHecG5E/maxresdefault.jpg";
+        document.getElementById("image").src = "https://media.giphy.com/media/ZKKt34cKvKmsw/giphy.gif";
     }
     //Teen Titans Audio & Image
     //---------------------------
@@ -146,7 +146,7 @@ function aud() {
         a.pause();
         scoobydoo.pause();
         teent.play();
-        document.getElementById("image").src = "https://nerdist.com/wp-content/uploads/2018/06/Teen_Titans_Homemade_Wallpaper_1920x1080_2.jpg";
+        document.getElementById("image").src = "https://i.pinimg.com/originals/ce/49/2d/ce492da22943d6064c9e885d3158d259.gif";
     }
 };
 
@@ -201,22 +201,21 @@ function complete() {
     //if WON...then alert, play audio, display image and reset new round
     if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
         wins++;
-        alert("YOU WON!")
         aud()
         reset()
         //display wins on screen
-        document.getElementById("winstracker").innerHTML = "WINS:  " + wins;
+        document.getElementById("winstracker").innerHTML = " " + wins;
 
         //if LOST...then alert and reset new round
     } else if (guessesRemaining === 0) {
         losses++;
-        alert("YOU LOSE")
         reset()
-        document.getElementById("losstracker").innerHTML = "LOSSES:  " + losses;
+        document.getElementById("image").src = "http://ferndown10k.co.uk/wp-content/uploads/2016/11/try-again.png"
+        document.getElementById("losstracker").innerHTML = " " + losses;
     }
     //display losses on screen && guesses remaining countdown
-    document.getElementById("currentword").innerHTML = "GUESS THIS WORD:     " + blanksAndCorrect.join(" ");
-    document.getElementById("guessesremaining").innerHTML = "GUESSES REMAINING:  " + guessesRemaining;
+    document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join(" ");
+    document.getElementById("guessesremaining").innerHTML = " " + guessesRemaining;
 }
 
 
@@ -239,6 +238,6 @@ document.onkeyup = function (event) {
     console.log(guesses);
 
     //display/store incorrect letters on screen
-    document.getElementById("playerguesses").innerHTML = "LETTERS YOU GUESSED:   " + wrongGuess.join(" ");
+    document.getElementById("playerguesses").innerHTML = "  " + wrongGuess.join(" ");
 }
 
