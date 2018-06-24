@@ -1,7 +1,7 @@
 
 //VARIABLES
 
-var words = ["arthur", "rugrats", "thesimpsons", "scoobydoo", "recess", "spongebob", "cyberchase", "franklin"]
+var words = ["arthur", "rugrats", "thesimpsons", "scoobydoo", "spongebob", "cyberchase", "teentitans", "dannyphantom"]
 
 var randomWord = "";
 var lettersOfWord = []
@@ -19,6 +19,7 @@ var guessesRemaining = 9;
 function Game() {
     //computer generates random word from words array
     randomWord = words[Math.floor(Math.random() * words.length)];
+
     // split the individual word into separate arrays, and store in new array 
     lettersOfWord = randomWord.split("");
     //store length of word in blanks, for later use
@@ -38,6 +39,31 @@ function Game() {
     console.log(blanks)
     console.log(blanksAndCorrect)
 }
+
+//AUDIO 
+//-----------------------------------
+
+//variables for audio 
+var a = document.getElementById("arthur");
+var r = document.getElementById("rugrats");
+var simpsons = document.getElementById("simpsons");
+
+// function for audio 
+function aud() {
+    if (randomWord === words[0]) {
+        r.pause();
+        a.play();
+        document.getElementById("image").src = "https://yt3.ggpht.com/a-/ACSszfGqnF8nezfhGPz8bfUScK5EPj-AifAMVwzU5g=s900-mo-c-c0xffffffff-rj-k-no";
+    } else if (randomWord === words[1]) {
+        a.pause();
+        r.play();
+    }
+    else if (randomWord === words[2]) {
+        a.pause();
+        r.pause()
+        simpsons.play();
+    }
+};
 
 function reset() {
     guessesRemaining = 9;
@@ -71,9 +97,6 @@ function checkLetters(letter) {
     }
 
     console.log(blanksAndCorrect);
-
-
-
 }
 
 
@@ -84,6 +107,7 @@ function complete() {
     if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
         wins++;
         alert("YOU WON!")
+        aud()
         reset()
 
         document.getElementById("winstracker").innerHTML = "WINS:  " + wins;
@@ -97,8 +121,9 @@ function complete() {
     //check to see if lost
     document.getElementById("currentword").innerHTML = "GUESS THIS WORD:     " + blanksAndCorrect.join(" ");
     document.getElementById("guessesremaining").innerHTML = "GUESSES REMAINING:  " + guessesRemaining;
-
 }
+
+
 
 // PROCESS
 
