@@ -74,7 +74,7 @@ function aud() {
         simpsons.pause();
         r.pause();
         a.play();
-        document.getElementById("image").src = "https://thumbs.gfycat.com/JitteryDependableFlatcoatretriever-size_restricted.gif";
+        document.getElementById("image").src = "./assets/images/arther.gif";
     }
     //Rugrats Audio & Image
     //---------------------------
@@ -86,7 +86,7 @@ function aud() {
         simpsons.pause();
         a.pause();
         r.play();
-        document.getElementById("image").src = "https://media.giphy.com/media/AX6OSdoOBWlc4/source.gif";
+        document.getElementById("image").src = "./assets/images/rugrats.gif";
     }
     //Simpsons Audio & Image
     //---------------------------
@@ -98,7 +98,7 @@ function aud() {
         r.pause();
         a.pause();
         simpsons.play();
-        document.getElementById("image").src = "https://media1.giphy.com/media/fBEDuhnVCiP16/giphy.gif";
+        document.getElementById("image").src = "./assets/images/simpsons.gif";
     }
     //Scooby-doo Audio & Image
     //---------------------------
@@ -110,7 +110,7 @@ function aud() {
         r.pause();
         a.pause();
         scoobydoo.play();
-        document.getElementById("image").src = "https://78.media.tumblr.com/937ad71d44ed5f303730ef952b629d1e/tumblr_otcsgxzXxe1uz05zuo4_500.gif";
+        document.getElementById("image").src = "./assets/images/scooby.gif";
     }
     //Spongebob Audio & Image
     //---------------------------
@@ -122,7 +122,7 @@ function aud() {
         a.pause();
         scoobydoo.pause();
         spongebob.play();
-        document.getElementById("image").src = "https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif";
+        document.getElementById("image").src = "./assets/images/spongebob.gif";
     }
     //Danny Audio & Image
     //---------------------------
@@ -134,7 +134,7 @@ function aud() {
         a.pause();
         scoobydoo.pause();
         danny.play();
-        document.getElementById("image").src = "https://media.giphy.com/media/ZKKt34cKvKmsw/giphy.gif";
+        document.getElementById("image").src = "./assets/images/danny.gif";
     }
     //Teen Titans Audio & Image
     //---------------------------
@@ -146,7 +146,7 @@ function aud() {
         a.pause();
         scoobydoo.pause();
         teent.play();
-        document.getElementById("image").src = "https://i.pinimg.com/originals/ce/49/2d/ce492da22943d6064c9e885d3158d259.gif";
+        document.getElementById("image").src = "./assets/images/teen.gif";
     }
 };
 
@@ -210,7 +210,7 @@ function complete() {
     } else if (guessesRemaining === 0) {
         losses++;
         reset()
-        document.getElementById("image").src = "http://ferndown10k.co.uk/wp-content/uploads/2016/11/try-again.png"
+        document.getElementById("image").src = "./assets/images/try-again.png"
         document.getElementById("losstracker").innerHTML = " " + losses;
     }
     //display losses on screen && guesses remaining countdown
