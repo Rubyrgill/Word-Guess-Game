@@ -1,3 +1,4 @@
+
 # Word-Guess-Game / Hangman Game
 
 ## Game Objective: 
@@ -15,7 +16,6 @@
     -- The [Guesses Remaining] countdown only goes down if you guess the wrong letter
     -- check to see the wrong guesses you already made at the bottom to narrow down your choices
  ```
-  
- ``` 
+
  <img width="976" alt="screen shot 2018-06-24 at 7 56 50 pm" src="https://user-images.githubusercontent.com/38548548/41825153-e0e11c8a-77e9-11e8-9318-396085597adb.png">
-```
+
