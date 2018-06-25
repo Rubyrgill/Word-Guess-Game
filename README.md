@@ -16,7 +16,7 @@
     -- The [Guesses Remaining] countdown only goes down if you guess the wrong letter
     -- check to see the wrong guesses you already made at the bottom to narrow down your choices
  ```
-
+##### Start Screen
  <img width="976" alt="screen shot 2018-06-24 at 7 56 50 pm" src="https://user-images.githubusercontent.com/38548548/41825153-e0e11c8a-77e9-11e8-9318-396085597adb.png">
 
 ## Tools/Languages Used: 
@@ -25,3 +25,8 @@
     -- HTML/CSS 
     -- GoogleFonts
 ```
+##### Correct Answer/Win Screen: 
+<img width="977" alt="screen shot 2018-06-24 at 7 57 03 pm" src="https://user-images.githubusercontent.com/38548548/41825338-872a63a6-77ec-11e8-9782-792e9128eda0.png">
+
+#### Wrong Answer/Lose Screen:
+<img width="953" alt="screen shot 2018-06-24 at 7 57 25 pm" src="https://user-images.githubusercontent.com/38548548/41825339-88627f88-77ec-11e8-83d6-ada6baac3158.png">
