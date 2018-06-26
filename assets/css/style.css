@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://thumbs.gfycat.com/GroundedTinyBluejay-size_restricted.gif");
+    background-image: url("../images/GroundedTinyBluejay-size_restricted.gif");
     width: 100%
 }
 
@@ -46,7 +46,7 @@ span {
 }
 
 .background {
-    background-image: url("http://agora.xtec.cat/escjoanmaragall/wp-content/uploads/usu115/2017/09/maxresdefault-1.jpg");
+    background-image: url("../images/backsplash.jpg");
     border: solid 5px red;
 }
 
