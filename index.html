@@ -4,104 +4,103 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>CHILDHOOD SHOWS GAME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="icon" href="https://www.freeiconspng.com/uploads/spongebob-squarepants-transparent-background-19.png" </head>
 
-</head>
+    <body>
+        <!--Main Heading-->
+        <div class="heading">
+            <h1>CHILDHOOD SHOWS</h1>
+        </div>
 
-<body>
-    <!--Main Heading-->
-    <div class="heading">
-        <h1>CHILDHOOD SHOWS</h1>
-    </div>
+        <div class="background">
+            <div class="container">
 
-    <div class="background">
-        <div class="container">
-
-            <!--Changing Image based on correct answers-->
-            <h2>Press Any Key To Guess This Word!</h2>
-            <div>
-                <img id="image" src="./assets/images/arrow.gif" width="40%" height="200">
-            </div>
-
-            <!--Current Word Container-->
-            <div>
-                <h3 id="currentword">_ _ _ _ _</h3>
-            </div>
-            <div id="scoreboard">
-                <!--Guesses left Container-->
-                <div class="sidebar">
-                    <h3>GUESSES LEFT:
-                        <span id="guessesremaining"></span>
-                    </h3>
+                <!--Changing Image based on correct answers-->
+                <h2>Press Any Key To Guess This Word!</h2>
+                <div>
+                    <img id="image" src="./assets/images/arrow.gif" width="40%" height="200">
                 </div>
 
-                <!--Wins counter Container-->
-                <div class="sidebar">
-                    <h3>WINS:
-                        <span id="winstracker"></span>
-                    </h3>
+                <!--Current Word Container-->
+                <div>
+                    <h3 id="currentword">_ _ _ _ _</h3>
                 </div>
-                <!--Loss counter Container-->
-                <div class="sidebar">
-                    <h3>LOSSES:
-                        <span id="losstracker"></span>
-                    </h3>
-                </div>
+                <div id="scoreboard">
+                    <!--Guesses left Container-->
+                    <div class="sidebar">
+                        <h3>GUESSES LEFT:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div>
 
-                <!--Wrong guesses container-->
-                <div class="sidebar">
-                    <h3>LETTERS YOU GUESSED WRONG:
-                        <span id="playerguesses"></span>
-                    </h3>
+                    <!--Wins counter Container-->
+                    <div class="sidebar">
+                        <h3>WINS:
+                            <span id="winstracker"></span>
+                        </h3>
+                    </div>
+                    <!--Loss counter Container-->
+                    <div class="sidebar">
+                        <h3>LOSSES:
+                            <span id="losstracker"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wrong guesses container-->
+                    <div class="sidebar">
+                        <h3>LETTERS YOU GUESSED WRONG:
+                            <span id="playerguesses"></span>
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <!--AUDIO FILES-->
-    <div>
-        <!--arthur-->
-        <audio id="arthur">
-            <source src="./assets/audio/arthur.mp3" type="audio/mp3">
-        </audio>
-        <!--rugrats-->
-        <audio id="rugrats">
-            <source src="./assets/audio/rugrats.mp3" type="audio/mp3">
-        </audio>
-        <!--simpsons-->
-        <audio id="simpsons">
-            <source src="./assets/audio/simpsons.mp3" type="audio/mp3">
-        </audio>
-        <!--scoobydoo-->
-        <audio id="scoobydoo">
-            <source src="./assets/audio/scoobydoo.mp3" type="audio/mp3">
-        </audio>
-        <!--spongebob-->
-        <audio id="spongebob">
-            <source src="./assets/audio/spongebob.mp3" type="audio/mp3">
-        </audio>
-        <!--danny-->
-        <audio id="danny">
-            <source src="./assets/audio/danny.mp3" type="audio/mp3">
-        </audio>
-        <!--teentitans-->
-        <audio id="teent">
-            <source src="./assets/audio/teentitans.mp3" type="audio/mp3">
-        </audio>
-    </div>
+        <!--AUDIO FILES-->
+        <div>
+            <!--arthur-->
+            <audio id="arthur">
+                <source src="./assets/audio/arthur.mp3" type="audio/mp3">
+            </audio>
+            <!--rugrats-->
+            <audio id="rugrats">
+                <source src="./assets/audio/rugrats.mp3" type="audio/mp3">
+            </audio>
+            <!--simpsons-->
+            <audio id="simpsons">
+                <source src="./assets/audio/simpsons.mp3" type="audio/mp3">
+            </audio>
+            <!--scoobydoo-->
+            <audio id="scoobydoo">
+                <source src="./assets/audio/scoobydoo.mp3" type="audio/mp3">
+            </audio>
+            <!--spongebob-->
+            <audio id="spongebob">
+                <source src="./assets/audio/spongebob.mp3" type="audio/mp3">
+            </audio>
+            <!--danny-->
+            <audio id="danny">
+                <source src="./assets/audio/danny.mp3" type="audio/mp3">
+            </audio>
+            <!--teentitans-->
+            <audio id="teent">
+                <source src="./assets/audio/teentitans.mp3" type="audio/mp3">
+            </audio>
+        </div>
 
 
 
 
-    <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/game.js"></script>
 
-</body>
+    </body>
 
 </html>
