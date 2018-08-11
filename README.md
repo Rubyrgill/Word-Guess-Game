@@ -5,7 +5,7 @@
 
 ## Game Objective: 
 ```
-    -- Guess the correct word and earn a win point! 
+    --- Guess the correct word and earn a win point! 
  ```
 ##### Game Instructions: 
  ```  
