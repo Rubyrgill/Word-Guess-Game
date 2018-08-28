@@ -31,6 +31,7 @@
   FUNCTIONALITY:
     - Blank spaces displays length of random word for player to guess
     - Scoreboard (wins,losses,guesses-remaining and wrong guesses below word) 
+    
   DESIGN: 
     - Theme Background, Gif Image guiding player to word 
  ```
